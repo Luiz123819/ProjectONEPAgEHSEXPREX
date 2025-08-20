@@ -1,0 +1,363 @@
+/* VARS */
+:root{
+  --color--01:#ffffff;
+  --color--02:rgb(150, 137, 137);
+  --color--03:rgb(53, 53, 53);
+  --color--04:rgb(255, 0, 0);
+}
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+
+.banner {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ff3c3c, #c40000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+  gap: 30px;
+}
+
+.banner_content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner_content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.banner_content span {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.banner_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.banner_buttons button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn_baner_button_orcamento {
+  background-color: #fff;
+  border: none;
+  color: #c40000;
+}
+
+.btn_baner_button_orcamento:hover {
+  background-color: #f2f2f2;
+  transform: translateY(-2px);
+}
+
+.btn_baner_button_servicos {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn_baner_button_servicos:hover {
+  background-color: #fff;
+  color: #c40000;
+  transform: translateY(-2px);
+}
+
+
+.servicos {
+  min-height: 80vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.servicos_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.servicos h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.servicos h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 4px;
+  background-color: red;
+  border-radius: 2px;
+}
+
+
+.subtitle_servicos {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 500;
+  color: #3e3e3e;
+  max-width: 800px;
+}
+
+.servicos_cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 40px;
+}
+
+.servicos_card {
+  width: 300px;
+  height: 370px;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 8px 16px rgba(0, 0, 0, 0.08),
+    0 16px 32px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.servicos_card:hover,
+.servicos_card:focus {
+  transform: scale(1.03);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.08),
+    0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.servicos_card:focus {
+  border: 2px solid #25D366;
+}
+
+#icon_card_primary {
+  background-color: #1ebe5d;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.servicos_card h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #222;
+}
+
+#subtitle_card {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: justify;
+  color: #444;
+}
+
+.servicos_card p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgb(76, 76, 76);
+  margin: 0;
+}
+
+.servicos_card p i {
+  color: #25D366;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.orcamento {
+    text-align: center;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+ 
+}
+
+
+.orcamento h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.orcamento h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 4px;
+  background-color: red;
+  border-radius: 2px;
+}
+.orcamento span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.section_img_form {
+  width: 100%;
+  height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        border-radius: 10px;
+}
+
+.section_img_form form {
+  
+    width: 600px ;
+    display: flex;
+    height:auto;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px ;
+    gap: 20px;
+  
+} 
+
+.section_img_form form span {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    margin: 0px ;
+}
+
+.section_img_form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+
+}
+
+.section_img_form input,
+.section_img_form select {
+    padding: 10px;
+    
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.buttons_form {
+    text-align: center;
+}
+
+.btn-orcamento-form {
+    background-color: #ff0202;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-orcamento-form:hover {
+    background-color: #d60000;
+}
+
+.section_img_form img {
+    flex: 1 1 300px;
+    max-width: 80%;
+ 
+    border-radius: 0px 10px 10px 0px;
+    background: linear-gradient(to right, red, rgb(172, 2, 2));
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+@media screen and (max-width:768px) {
+  .section_img_form{
+    flex-direction: column-reverse;
+   form{
+    widt
+   }
+    
+  }
+}
